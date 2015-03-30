@@ -1,0 +1,48 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+
+        applicationId "ru.rbss.harry"
+        minSdkVersion 9
+        targetSdkVersion 19
+    }
+
+
+    buildTypes {
+        release {
+            //runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    productFlavors{
+        akcio{
+            applicationId  "ru.rbss.harry.akcio"
+        }
+
+        kaputdrakonis{
+            applicationId "ru.rbss.harry.kaputdrakonis"
+        }
+
+        lumos{
+            applicationId "ru.rbss.harry.lumos"
+        }
+        lemon{
+            applicationId "ru.rbss.harry.lemon"
+        }
+        
+    }
+}
+
+ant.importBuild 'assets.xml'
+preBuild.dependsOn(list, checksum)
+clean.dependsOn(clean_assets)
+
+dependencies {
+    compile "com.android.support:appcompat-v7:19.0.+"
+    compile files('libs/pocketsphinx-android-0.8-nolib.jar')
+}

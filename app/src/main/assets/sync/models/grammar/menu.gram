@@ -1,0 +1,8 @@
+#JSGF V1.0;
+
+grammar menu;
+public <item> = ( <a> | <b> | <c> <d>);
+<a> = ( akcio* );
+<b> = ( lumos* );
+<c> = ( kaput );
+<d> = ( drakonis );

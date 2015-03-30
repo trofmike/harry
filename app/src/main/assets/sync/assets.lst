@@ -1,0 +1,11 @@
+models/dict/ru.dic
+models/grammar/digits.gram
+models/grammar/keywords.gram
+models/grammar/menu.gram
+models/hmm/msu_ru_nsh.cd_cont_1000_8gau_16000/feat.params
+models/hmm/msu_ru_nsh.cd_cont_1000_8gau_16000/mdef
+models/hmm/msu_ru_nsh.cd_cont_1000_8gau_16000/means
+models/hmm/msu_ru_nsh.cd_cont_1000_8gau_16000/mixture_weights
+models/hmm/msu_ru_nsh.cd_cont_1000_8gau_16000/noisedict
+models/hmm/msu_ru_nsh.cd_cont_1000_8gau_16000/transition_matrices
+models/hmm/msu_ru_nsh.cd_cont_1000_8gau_16000/variances
